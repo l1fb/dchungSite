@@ -1,0 +1,52 @@
+@import "../abstracts/_mixin.scss";
+@import "../abstracts/_variables.scss";
+
+.header-container {
+
+  width: 100%;
+  padding: 20px 10px;
+  height: 9.5vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: white;
+
+  li {
+    margin: 10px;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header-left{
+    color:white;
+    justify-self: flex-start;
+
+  }
+
+  .header-right {
+    padding-right: 20px;
+    color: white;
+    display: none;
+
+  }
+
+  .native-button-container {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+
+    .native-button {
+      color: $color-red;
+      margin-right: 10px;
+      font-size: 28px;
+    }
+
+  }
+
+  //button 
+  //text style
+  //color
+  //margin
+}  

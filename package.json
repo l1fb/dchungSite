@@ -1,0 +1,46 @@
+{
+  "name": "dchungwebsite",
+  "version": "1.0.0",
+  "description": "doing website stuff",
+  "main": "5000",
+  "scripts": {
+    "build:dev": "webpack -w --config ./webpack.prod.config.js --mode=development",
+    "build:prod": "webpack --config ./webpack.prod.config.js --mode=production",
+    "start:dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "test",
+    "sass": "sass --watch ./client/src/stylesheets/main.scss:./client/src/stylesheets/main.css"
+  },
+  "author": "David Chung",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cloudinary-react": "^1.0.6",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.5",
+    "normalize.css": "^8.0.0",
+    "path": "^0.12.7",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router-dom": "^4.3.1",
+    "sass": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "install": "^0.12.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.14.0",
+    "webpack-cli": "^3.0.8"
+  }
+}
